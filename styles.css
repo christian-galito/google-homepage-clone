@@ -1,0 +1,295 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  color: black;
+}
+
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 8px;
+}
+
+.flex {
+  display: flex;
+}
+
+object,
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  padding: 12px;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header ul li {
+  padding: 8px;
+}
+
+.google-apps {
+  width: 45px;
+  padding: 8px;
+  fill: #5f6368;
+}
+
+.google-apps:hover {
+  cursor: pointer;
+  background-color: rgba(60, 64, 67, 0.08);
+  border-radius: 50%;
+}
+
+header object {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  height: 300px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.logo img {
+  width: 272px;
+  height: 92px;
+}
+
+.search-bar {
+  min-width: 600px;
+  min-height: 45px;
+  border-radius: 30px;
+  border: 1px solid #dfe1e5;
+  padding-top: 12px;
+}
+
+.search-bar textarea {
+  flex: 2;
+  border: none;
+  max-width: 466px;
+  margin-top: -2px;
+  line-height: 22px;
+  border: none;
+  resize: none;
+}
+
+.search-bar textarea:focus-visible {
+  outline: none;
+}
+
+.search-bar-logo {
+  display: flex;
+  justify-content: center;
+  padding: 0 12px;
+}
+
+.search-bar-logo div {
+  width: 20px;
+  height: 20px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.sign-in {
+  width: 96px;
+  height: 36px;
+  color: white;
+  background-color: #1a73e8;
+  border-radius: 4px;
+  border: 0px;
+}
+
+.sign-in:hover {
+  background: #1b66c9;
+  box-shadow: 0 1px 3px 1px rgba(66, 64, 67, 0.15),
+    0 1px 2px 0 rgba(60, 64, 67, 0.3);
+}
+
+.button2 {
+  border: 1px solid #f8f9fa;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  height: 36px;
+  padding: 8px;
+  margin-right: 8px;
+}
+
+.button2:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dadce0;
+  cursor: pointer;
+}
+
+.button-quick-search > * {
+  margin: 0px 8px;
+}
+
+.offer > * {
+  font-size: 12px;
+  margin-right: 4px;
+  text-decoration: none;
+}
+
+.offer a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+footer > * {
+  padding: 16px 32px;
+}
+
+footer > div {
+  justify-content: space-between !important;
+  background-color: #f2f2f2;
+  margin: 0 !important;
+}
+
+footer p {
+  padding-right: 24px;
+}
+
+.footer-1 {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dadce0;
+}
+
+.footer-2 {
+  border-radius: 0 0 8px 8px;
+}
+
+.footer-2a {
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+}
+
+.footer-2b {
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+}
+
+.footer-2 p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+main {
+  transition: transform 0.1s;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer-2a {
+    justify-content: flex-end;
+    width: 50%;
+  }
+
+  .footer-2b {
+    justify-content: center;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main {
+    transform: scale(0.95);
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  main {
+    transform: scale(0.9);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  main {
+    transform: scale(0.85);
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  main {
+    transform: scale(0.8);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  main {
+    transform: scale(0.75);
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  main {
+    transform: scale(0.7);
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  main {
+    transform: scale(0.65);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    transform: scale(0.6);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  main {
+    transform: scale(0.55);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    transform: scale(0.5);
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  main {
+    transform: scale(0.3);
+  }
+}
